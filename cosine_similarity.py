@@ -2,7 +2,6 @@
 import pandas as pd
 import numpy as np
 from collections import OrderedDict
-# from math import sqrt
 
 csv = input("読み込むｃｓｖファイルを入力してください。 : ")
 table = pd.read_csv(csv, encoding='utf-8')
@@ -17,8 +16,6 @@ for item in items:
     for i in range(len(items)):
         item_taste.append(table[item][i])
     taste_dict[item] = item_taste
-
-# taste = pd.Series(taste_dict)
 
 # 趣向データのベクトル化
 all_vector = OrderedDict()
